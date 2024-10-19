@@ -6,11 +6,26 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: '15px'
+    },
+    fontFamily: {
+      primary: "var(--font-bebas)",
+      secondary: "var(--font-inter)"
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#10151f",
+        secondary: "#475467",
+        accent: {
+          DEFAULT: "#7edad2",
+          hover: "#79ccd3"
+        }
       },
+      boxShadow: {
+        custom: "0px 15px 54px rgba(0,0,0,0.4)"
+      }
     },
   },
   plugins: [],
